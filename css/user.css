@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-container{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.obj{
+    margin-top: 20px;
+    background-color: rgb(84, 138, 110);
+    padding: 10px;
+    min-width: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.obj label{
+    margin-top: 5px;
+}
+
+h3{
+    color: rgb(220, 20, 153);
+    margin-top: 25px;
+}
+.submit-btn{
+    margin-top: 15px;
+    background-color: rgb(220, 20, 153);
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+a{
+    padding: 5px;
+    border: 0;
+    border-radius: 0.3rem;
+    margin: 25px;
+    width: 100px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+a:hover{
+    background-color: crimson;
+    transform: scale(1.2);
+}
+
+.user-stngs{
+    background-color: rgb(215, 215, 215);
+    
+}
+
+.map-btn{
+    background-color: rgb(215, 215, 215);
+  
+}
+.home-btn{
+    background-color: rgb(215, 215, 215);
+    
+}
+
+.nav-btns{
+    margin: auto;
+    display: flex;
+    background-color: rgb(37, 66, 83);
+    align-items: center;
+    padding: 0;
+}

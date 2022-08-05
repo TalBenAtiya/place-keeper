@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/user.css">
+    <title>Place Keeper</title>
+</head>
+
+<body onload="onInit()">
+    <nav class="nav-btns">
+        <a href="index.html" target="_blank" class="home-btn">Home</a>
+        <a href="map.html" target="_blank"  class="map-btn">Map</a>
+        <a href="user-settings.html" target="_blank" class="user-stngs">User Settings</a>
+    </nav>
+    <header>
+        <h1>User Settings</h1>
+    </header>
+    <main class="main-container">
+        <form onsubmit="onSubmitForm(event, this)">
+            <div class="obj email">
+                Email Adress: <div class="email-input"><input required name="email" type="email" placeholder="Insert email adress">
+                </div>
+            </div>
+            <div class="obj age">
+                Age: <div class="age-input"><input name="age" oninput="title=this.value;"  type="range" min="18" max="120"
+                        value="18"></div>
+            </div>
+            <div class="obj birth-date">
+                Birth Date: <div  class="birth-date-input"><input name="birth-date" type="date"></div>
+            </div>
+            <div class="obj birth-time">
+                Birth Time: <div class="birth-time-input"><input name="birth-time" type="time"></div>
+            </div>
+            <h3>Colors</h3>
+            <div class="obj user-bkg-color">
+                Background Color: <div class="bkg-color-input"><input name="bkg-color" type="color"></div>
+            </div>
+            <div class="obj user-txt-color">
+                Text Color: <div class="txt-color-input"><input name="txt-color" type="color"></div>
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </main>
+
+    
+    <script src="js/services/storageService.js"></script>
+    <script src="js/services/userService.js"></script>
+    <script src="js/main.controller.js"></script>
+</body>
+
+</html>
